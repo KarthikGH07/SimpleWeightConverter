@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Weight Converter</title>
+    <style>
+        body {
+            margin-top: 70px;
+            background: #333;
+            color:#fff; 
+        }
+        .card-primary{
+            background-color:#0275d8;
+            border-color:#0275d8;
+        }
+        .card-success{
+            background-color:#5cb85c;
+            border-color:#5cb85c;
+        }
+        .card-danger{
+            background-color:#d9534f;
+            border-color:#d9534f;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center">Weight Converter</h1>
+                <form>
+                    <div class="form-group">
+                        <input type="number" placeholder="Enter pounds..." name="" id="lbsInput"
+                            class="form-control form-control-lg">
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card card-primary mb-2">
+                        <div class="card-block">
+                            <h4>Grams:</h4>
+                            <div id="gramsOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card card-success mb-2">
+                        <div class="card-block">
+                            <h4>KiloGrams:</h4>
+                            <div id="kgOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card card-danger mb-2">
+                        <div class="card-block ">
+                            <h4>Ounces:</h4>
+                            <div id="ozOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
