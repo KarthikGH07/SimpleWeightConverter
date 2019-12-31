@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Weight Converter</title>
+    <style>
+        body {
+            margin-top: 70px;
+            background: #333;
+            color:#fff;  
+        }
+        .card-primary{
+            background-color:#0275d8;
+            border-color:#0275d8;
+        }
+        .card-success{
+            background-color:#5cb85c;
+            border-color:#5cb85c;
+        }
+        .card-danger{
+            background-color:#d9534f;
+            border-color:#d9534f;
+        }
+        .card-warning{
+            background-color:rgb(54, 105, 12);
+            border-color:rgb(54, 105, 12);
+        }
+        .primary-back
+        {
+            background:#0275d8 ;
+            
+        }
+        .success-back
+        {
+            background:#5cb85c ;
+        }
+        .danger-back
+        {
+            background:#d9534f ;
+        }
+        .warning-back
+        {
+            background:rgb(54, 105, 12) ;
+        }
+        .format{
+            color:#fff;
+            border:none;
+            font-size: 30px;
+            outline: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center">Weight Converter</h1>
+                <form>
+                    <!-- <div class="form-group">
+                        <input type="number" placeholder="Enter pounds..." name="" id="lbsInput"
+                            class="form-control form-control-md">
+                    </div> -->
+                </form>
+                <div id="output">
+                    <div class="card card-primary mb-2">
+                        <div class="card-block">
+                            <h4 class="p-2">Grams:</h4>
+                            <input type="text" name="grams" id="gramsOutput" class="px-2 mx-2 mb-2 primary-back format" autofocus>
+                        </div>
+                    </div>
+                    <div class="card card-success mb-2">
+                        <div class="card-block">
+                            <h4 class="p-2">KiloGrams:</h4>
+                            <input type="text" name="kg" id="kgOutput" class="px-2 mx-2 mb-2 success-back format" >
+                        </div>
+                    </div>
+                    <div class="card card-danger mb-2">
+                        <div class="card-block ">
+                            <h4 class="p-2">Ounces:</h4>
+                            <input type="text" name="oz" id="ozOutput" class="px-2 mx-2 mb-2 danger-back format">
+                        </div>
+                    </div>
+                     <div class="card card-warning mb-2">
+                        <div class="card-block ">
+                            <h4 class="p-2">Pounds:</h4>
+                            <input type="text" name="lbs" id="lbsOutput" class="px-2 mx-2 mb-2 warning-back format">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
